@@ -132,3 +132,7 @@ Build Protobuf Rust Code
 ```
 cargo build -p generated
 ```
+#### Make Sure no version conflict
+``bash
+cargo tree -p sqlx
+``

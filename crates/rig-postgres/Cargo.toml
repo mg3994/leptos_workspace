@@ -17,9 +17,10 @@ sqlx = { workspace = true, features = [
     "postgres",
     "uuid",
     "json",
+    "derive"
 
 ] }
-pgvector = { workspace = true, features = ["sqlx",] }
+pgvector = { workspace = true, features = ["sqlx"] }
 uuid = { workspace = true, features = ["v4", "serde"] }
 
 [dev-dependencies]
