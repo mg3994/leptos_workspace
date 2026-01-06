@@ -1,4 +1,6 @@
 mod grpc;
+mod models;
+mod api;
 
 use axum::Router;
 use leptos::prelude::*;
