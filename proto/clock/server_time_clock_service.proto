@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+package clock;
+
+service ClockService {
+  rpc Observe(ClockRequest) returns (stream ClockResponse);
+}
+
+message ClockRequest {
+  uint64 interval_seconds = 1;
+}
+
+message ClockResponse {
+  google.protobuf.Timestamp time_stamp = 1;
+}

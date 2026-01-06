@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
-members = ["app", "frontend", "server"]
-
+members = ["app", "crates/rig-postgres", "frontend", "generated",   "server"]
+package = { edition = "2024" }
 # need to be applied only to wasm build
 [profile.release]
 codegen-units = 1
@@ -9,11 +9,38 @@ lto = true
 opt-level = 'z'
 
 [workspace.dependencies]
+#grpc
+prost = "0.14.1"
+prost-types = "0.14.1"
+tokio-stream =  "0.1.18"
+tonic = "0.14.2"
+tonic-prost = "0.14.2"
+#protobuf = "4.33.2-release"
+
+# serialize and deserialize
+serde = { version =  "1.0.228", features = ["derive"] }
+serde_json = "1.0.148"
+
+# leptos
 leptos = { version = "0.8.2" }
 leptos_meta = { version = "0.8.2" }
 leptos_router = { version = "0.8.2" }
 leptos_axum = { version = "0.8.2" }
 
+#AI
+rig-core = "0.27.0"
+
+#db
+sqlx = "0.9.0-alpha.1"
+pgvector = "0.4.1"
+
+#utils
+tracing = "0.1.44"
+uuid = "1.19.0"
+tracing-subscriber = "0.3.22"
+dotenvy = "0.15.7"
+
+#extras
 axum = "0.8.4"
 cfg-if = "1.0.0"
 console_error_panic_hook = "0.1.7"
@@ -97,3 +124,5 @@ lib-features = []
 #
 # Optional. Defaults to false.
 lib-default-features = false
+
+

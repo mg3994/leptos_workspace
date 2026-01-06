@@ -108,3 +108,27 @@ Finally, run the server binary.
 ## Licensing
 
 This template itself is released under the Unlicense. You should replace the LICENSE for your own application with an appropriate license if you plan to release it publicly.
+
+
+
+# ReadMe Starts Here
+
+### My Project Workspace
+
+#### This repository demonstrates a modular Rust workspace architecture for building:
+
+* Web applications with Leptos + Axum
+
+* Mobile applications via gRPC
+
+* Postgres database integration (pgvector, PostGIS, and extensions)
+
+* AI functionality via RIG crates
+
+* Shared protobufs for cross-platform (Flutter / other frameworks) usage
+
+# To Remind
+Build Protobuf Rust Code
+```
+cargo build -p generated
+```
