@@ -3698,6 +3698,7 @@ version = "0.1.0"
 dependencies = [
  "app",
  "axum",
+ "generated",
  "leptos",
  "leptos_axum",
  "log",
