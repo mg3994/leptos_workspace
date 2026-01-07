@@ -47,13 +47,15 @@ async fn main() {
         })
         .fallback(leptos_axum::file_and_error_handler(shell))
         .with_state(leptos_options);
-
+// GRPC [Start]
     // Correct way to initialize the service
     let echo_impl = MyEcho::default();
     let echo_service = generated::echo::echo_server::EchoServer::new(echo_impl);
 
     let grpc_router = tonic::transport::Server::builder()
         .add_service(echo_service);
+// GRPC [End]
+
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`
     log!("listening on http://{}", &addr);
