@@ -3676,6 +3676,8 @@ version = "0.1.0"
 dependencies = [
  "app",
  "axum",
+ "dotenvy",
+ "generated",
  "leptos",
  "leptos_axum",
  "log",
@@ -3683,6 +3685,7 @@ dependencies = [
  "serde_json",
  "simple_logger",
  "tokio",
+ "tonic",
  "tower",
  "tower-http",
 ]
