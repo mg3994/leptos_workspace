@@ -119,7 +119,7 @@ This template itself is released under the Unlicense. You should replace the LIC
 
 * Web applications with Leptos + Axum
 
-* Mobile applications via gRPC
+* Mobile applications via gRPC (By MG: Idea Dropped)
 
 * Postgres database integration (pgvector, PostGIS, and extensions)
 
