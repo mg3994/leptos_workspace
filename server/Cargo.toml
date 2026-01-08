@@ -8,7 +8,7 @@ edition = { workspace = true }
 [dependencies]
 # grpc related
 generated = {path = "../generated"}
-tonic.workspace = true
+tonic = {workspace = true,features = ["transport","router"]}
 #utils
 serde.workspace = true
 serde_json.workspace = true
@@ -21,7 +21,7 @@ leptos_axum.workspace = true
 axum.workspace = true
 simple_logger.workspace = true
 tokio.workspace = true
-tower.workspace = true
+tower = {workspace = true,features = ["util"]}
 tower-http.workspace = true
 log.workspace = true
 
