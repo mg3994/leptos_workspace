@@ -108,3 +108,220 @@ Finally, run the server binary.
 ## Licensing
 
 This template itself is released under the Unlicense. You should replace the LICENSE for your own application with an appropriate license if you plan to release it publicly.
+
+
+# Guide Starts Here
+
+```bash
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace> ui add avatar 
+📦 Final set of resolved components: {"avatar"}
+📦 Final set of cargo dependencies: {}
+🔸 Project not initialized. Run 'ui init' to initialize the project first.
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace> cd app
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add avatar
+📦 Final set of resolved components: {"avatar"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add badge
+📦 Final set of resolved components: {"badge"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add bottom_nav
+📦 Final set of resolved components: {"bottom_nav"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add breadcrumb
+📦 Final set of resolved components: {"breadcrumb"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add button
+📦 Final set of resolved components: {"button"}
+📦 Final set of cargo dependencies: {}
+Component button already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add button_action
+📦 Final set of resolved components: {"button", "button_action"}
+📦 Final set of cargo dependencies: {}
+Component button already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add button_group
+📦 Final set of resolved components: {"button_group"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add card
+📦 Final set of resolved components: {"card"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add card_carousel
+📦 Final set of resolved components: {"card_carousel"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add checkbox
+📦 Final set of resolved components: {"checkbox"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add chips
+📦 Final set of resolved components: {"chips"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add command
+📦 Final set of resolved components: {"button", "command"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+Component button already exists in mod.rs
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add context_menu
+📦 Final set of resolved components: {"context_menu"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add table
+📦 Final set of resolved components: {"table"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add date_picker
+📦 Final set of resolved components: {"date_picker"}
+📦 Final set of cargo dependencies: {"time"}
+  ✔️ Successfully added to Cargo.toml: [time] !                                                                                                                                     
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add dialog
+📦 Final set of resolved components: {"dialog", "button"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+Component dialog already exists in mod.rs
+Component button already exists in mod.rs
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add drag_and_drop
+📦 Final set of resolved components: {"drag_and_drop"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add drawer
+📦 Final set of resolved components: {"drawer"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/app/vaul_drawer.js"}
+  ✔️ JS files installed: [/app/vaul_drawer.js]                                                                                                                                      
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add dropdown_menu
+📦 Final set of resolved components: {"dropdown_menu"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add dropzone     
+⚠️  Component 'dropzone' not found in registry. Skipping...
+📦 Final set of resolved components: {}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add empty
+📦 Final set of resolved components: {"empty"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add form
+📦 Final set of resolved components: {"form", "label", "separator", "input"}
+📦 Final set of cargo dependencies: {"serde", "validator", "strum"}
+  ✔️ Successfully added to Cargo.toml: [serde, validator] !                                                                                                                         
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add input
+📦 Final set of resolved components: {"input"}
+📦 Final set of cargo dependencies: {}
+Component input already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add input_group
+📦 Final set of resolved components: {"input_group", "input", "textarea"}
+📦 Final set of cargo dependencies: {}
+Component input already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add input_otp
+📦 Final set of resolved components: {"input_otp"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/components/otp.js"}
+  ✔️ JS files installed: [/components/otp.js]                                                                                                                                       
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add input_phone
+📦 Final set of resolved components: {"button", "input_phone", "input", "popover", "command"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+Component button already exists in mod.rs
+Component input already exists in mod.rs
+Component command already exists in mod.rs
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add item
+📦 Final set of resolved components: {"item", "separator"}
+📦 Final set of cargo dependencies: {}
+Component separator already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add kbd
+📦 Final set of resolved components: {"kbd"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add label
+📦 Final set of resolved components: {"label"}
+📦 Final set of cargo dependencies: {}
+Component label already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add marquee
+📦 Final set of resolved components: {"marquee", "mask"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add multi_select
+📦 Final set of resolved components: {"multi_select"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add pagination
+📦 Final set of resolved components: {"pagination", "button"}
+📦 Final set of cargo dependencies: {"strum"}
+Component button already exists in mod.rs
+  All dependencies already exist in Cargo.toml                                                                                                                                      
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add popover
+🔸 Registry request failed
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add popover
+🔸 Registry request failed
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add popover
+📦 Final set of resolved components: {"popover"}
+📦 Final set of cargo dependencies: {}
+Component popover already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add pressable
+📦 Final set of resolved components: {"pressable"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add radio_button
+📦 Final set of resolved components: {"radio_button"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add radio_button_group
+📦 Final set of resolved components: {"radio_button_group"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add scroll_area
+📦 Final set of resolved components: {"scroll_area"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add select
+📦 Final set of resolved components: {"select"}
+📦 Final set of cargo dependencies: {"strum"}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+Component select already exists in mod.rs
+  All dependencies already exist in Cargo.toml                                                                                                                                        ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add separator
+📦 Final set of resolved components: {"separator"}
+📦 Final set of cargo dependencies: {}
+Component separator already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add sheet
+📦 Final set of resolved components: {"sheet", "button"}
+📦 Final set of cargo dependencies: {}
+📦 Final set of JS files: {"/hooks/lock_scroll.js"}
+Component button already exists in mod.rs
+  ✔️ JS files installed: [/hooks/lock_scroll.js]                                                                                                                                    
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add skeleton
+📦 Final set of resolved components: {"skeleton"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add slider
+📦 Final set of resolved components: {"slider"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add sonner
+📦 Final set of resolved components: {"sonner"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add spinner
+📦 Final set of resolved components: {"spinner"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add status
+📦 Final set of resolved components: {"status"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add switch
+📦 Final set of resolved components: {"switch"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add table
+📦 Final set of resolved components: {"table"}
+📦 Final set of cargo dependencies: {}
+Component table already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add tabs
+📦 Final set of resolved components: {"tabs"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add textarea
+📦 Final set of resolved components: {"textarea"}
+📦 Final set of cargo dependencies: {}
+Component textarea already exists in mod.rs
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add theme_toggle
+📦 Final set of resolved components: {"theme_toggle"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add toast_custom 
+⚠️  Component 'toast_custom' not found in registry. Skipping...
+📦 Final set of resolved components: {}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> ui add tooltip
+📦 Final set of resolved components: {"tooltip"}
+📦 Final set of cargo dependencies: {}
+PS C:\Users\manis\OneDrive\Desktop\app_server\leptos_workspace\app> 
+
+```
