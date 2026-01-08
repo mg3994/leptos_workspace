@@ -54,6 +54,6 @@ fn HomePage() -> impl IntoView {
 
     view! {
         <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count.get()}</button>
+        <button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800" on:click=on_click>"Click Me: " <span>{move || count.get()}</span></button>
     }
 }
