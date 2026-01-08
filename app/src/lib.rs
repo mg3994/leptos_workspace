@@ -1,3 +1,5 @@
+mod components;
+
 use leptos::prelude::*;
 use leptos_meta::{provide_meta_context, MetaTags, Stylesheet, Title};
 use leptos_router::{
@@ -54,6 +56,34 @@ fn HomePage() -> impl IntoView {
 
     view! {
         <h1>"Welcome to Leptos!"</h1>
-        <button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800" on:click=on_click>"Click Me: " <span>{move || count.get()}</span></button>
+        <MyComponent/>
+        <button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800"
+           on:click=on_click>"Click Me: "
+           <span>{move || count.get()}</span>
+        </button>
+    }
+}
+
+
+use icons::{ChevronRight, Heart, Star, Menu};
+
+#[component]
+pub fn MyComponent() -> impl IntoView {
+    view! {
+        <ChevronRight />
+        <Heart class="text-red-500" />
+        <Star class="size-6" />
+        <Menu class="size-8 text-gray-700" />
+        // Size variations
+<Star class="size-4" />      // 16px
+<Star class="size-6" />      // 24px
+<Star class="size-8" />      // 32px
+
+// Colors
+<Heart class="text-red-500" />
+// <Check class="text-green-600" />
+
+// Custom styling
+<Menu class="size-6 text-gray-900 hover:text-blue-500" />
     }
 }

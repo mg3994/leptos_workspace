@@ -17,6 +17,9 @@ icons = {version = "0.18.0",features = ["leptos"] }
 http.workspace = true
 cfg-if.workspace = true
 thiserror.workspace = true
+## Helper
+tw_merge = { version = "0.1.7", features = ["variant","debug"] }
+leptos_ui = "0.3.17"
 
 [features]
 default = []

@@ -1,13 +1,13 @@
 {
   "scripts": {
-    "build": "npx @tailwindcss/cli -i input.css -o ./style/output.css",
-    "watch": "npx @tailwindcss/cli -i input.css -o ./style/output.css --watch"
+    "build": "npx @tailwindcss/cli -i ./style/tailwind.css -o ./style/output.css",
+    "watch": "npx @tailwindcss/cli -i ./style/tailwind.css -o ./style/output.css --watch"
   },
   "dependencies": {
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18"
   }
-
 }
