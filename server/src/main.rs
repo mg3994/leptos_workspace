@@ -1,15 +1,14 @@
 mod grpc;
 mod models;
 mod api;
+mod axum_grpc;
 
 use axum::Router;
 use leptos::prelude::*;
 use leptos_axum::{generate_route_list, LeptosRoutes};
 use app::*;
 use leptos::logging::log;
-
-
-
+use crate::axum_grpc::ContentTypeSwitch;
 
 #[tokio::main]
 async fn main() {
@@ -38,10 +37,15 @@ async fn main() {
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`
     log!("listening on http://{}", &addr);
+    // 3. Combine them using the ContentTypeSwitch
+    // The switch handles the routing based on "application/grpc"
+    let combined_service = ContentTypeSwitch::new(grpc_server, axum_service);
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
-    axum::serve(listener, axum_service.into_make_service())
-        .await
-        .unwrap();
+    // axum::serve(listener, axum_service.into_make_service())
+    //     .await
+    //     .unwrap();
+    axum::serve(listener,tower::make::Shared::new(combined_service))
+        .await.unwrap();
 }
 
 
